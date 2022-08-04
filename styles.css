@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 35rem;
+    height: 38rem;
+    display: grid;
+    grid-template-areas: "a a a a"
+                         "plus minus mult div"
+                         "c d e o"
+                         "f g h o"
+                         "i j k o"
+                         "l m n o";
+
+    grid-auto-rows: 1fr;
+    column-gap: 1rem;
+    row-gap: 1.6rem;
+    border: 1px solid lightgray;
+    padding: 1.6rem;
+    border-radius: .8rem;
+}
+
+.calculator > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.result {
+    border: 1px solid grey;
+    grid-area: a;
+    justify-content: right;
+    padding-right: 1rem;
+    overflow:hidden;
+}
+
+
+.operator {
+    background-color: #dddddd;
+}
+
+.operator:hover {
+    background-color: #C7C7C7;
+}
+
+.num, .decimal, .clear {
+    background-color: #f9f9f9;
+}
+
+.num:hover, .decimal:hover, .clear:hover {
+    background-color: #EDEDED;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.multiply {
+    grid-area: mult;
+}
+
+.divide {
+    grid-area: div;
+}
+
+.clear {
+    grid-area: n;
+}
+
+.decimal {
+    grid-area: m;
+}
+
+.n-0 {
+    grid-area: l;
+}
+
+.n-1 {
+    grid-area: i;
+}
+.n-2 {
+    grid-area: j;
+}
+.n-3 {
+    grid-area: k;
+}
+
+.n-4 {
+    grid-area: f;
+}
+.n-5 {
+    grid-area: g;
+}
+.n-6 {
+    grid-area: h;
+}
+
+.n-7 {
+    grid-area: c;
+}
+.n-8 {
+    grid-area: d;
+}
+.n-9 {
+    grid-area: e;
+}
+
+
+
+.equals {
+    grid-area: o;
+    background-color: #4e8ffe;
+}
+
+.equals:hover {
+    background-color: #4681E5;
+}
